@@ -1,0 +1,122 @@
+/* Conteneur du panier */
+#cart {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  background: #fff;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgb(0 0 0 / 0.10);
+}
+
+#cart h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  color: #1e1e2f;
+  letter-spacing: 1px;
+}
+
+#cart ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+#cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+}
+
+#cart li:last-child {
+  border-bottom: none;
+}
+
+#cart .cart-game-name {
+  font-weight: 600;
+  color: #222;
+}
+
+#cart .cart-game-price {
+  color: #ff6f61;
+  font-weight: 700;
+  margin-left: 1.2rem;
+}
+
+#cart .remove-btn {
+  background: #ff6f61;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  transition: background 0.2s;
+}
+
+#cart .remove-btn:hover,
+#cart .remove-btn:focus {
+  background: #e85b50;
+  outline: none;
+}
+
+#cart .cart-total {
+  text-align: right;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#cart .validate-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: #1e1e2f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+#cart .validate-btn:hover,
+#cart .validate-btn:focus {
+  background: #ff6f61;
+  outline: none;
+}
+
+#cart .empty-cart {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  #cart {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  #cart li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.97rem;
+  }
+  #cart .cart-total {
+    font-size: 1rem;
+  }
+  #cart .validate-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
